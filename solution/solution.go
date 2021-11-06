@@ -3,10 +3,8 @@ package solution
 import "fmt"
 
 func Solution() {
-	root := &TreeNode{
-		Val:   1,
-		Left:  &TreeNode{2, nil, &TreeNode{5, nil, nil}},
-		Right: &TreeNode{3, nil, &TreeNode{6, nil, nil}}}
-	ret := rightSideView(root)
+	//ribbons := []int{100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,1,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000,100000}
+	heights := []int{2, 1, 5, 6, 2, 3}
+	ret := largestRectangleArea(heights)
 	fmt.Println(ret)
 }
